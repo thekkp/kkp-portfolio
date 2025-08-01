@@ -3,66 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KKP</title>
+    <title>Kavin Krishna Prasad | Portfolio</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: #ffffff;
+            overflow-x: hidden;
         }
+
         .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        /* Animated background particles */
+        .bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(64, 224, 208, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) { width: 20px; height: 20px; top: 20%; left: 20%; animation-delay: 0s; }
+        .particle:nth-child(2) { width: 15px; height: 15px; top: 60%; left: 80%; animation-delay: 2s; }
+        .particle:nth-child(3) { width: 25px; height: 25px; top: 80%; left: 30%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
+        }
+
+        .hero-section {
             text-align: center;
-            color: white;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            margin-bottom: 4rem;
+            animation: slideInUp 1s ease-out;
         }
-        h1 {
-            font-size: 2.5rem;
+
+        .name-title {
+            font-size: 3.5rem;
+            font-weight: 700;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #40e0d0, #48cae4, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
         }
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-top: 1rem;
-        }
+
         .initials {
+            font-size: 2rem;
+            color: #48cae4;
+            font-weight: 300;
+            margin-left: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #b8b8b8;
+            margin-bottom: 2rem;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .quote::before,
+        .quote::after {
+            content: '"';
+            font-size: 2rem;
+            color: #40e0d0;
             font-weight: bold;
-            color: #ffd700;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
-        .ai-focus {
+
+        .description {
+            max-width: 800px;
+            margin: 0 auto 3rem;
             font-size: 1.1rem;
-            color: #4ade80;
-            margin: 1rem 0;
-            font-weight: 500;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            line-height: 1.8;
+            color: #e0e0e0;
+            animation: slideInUp 1.2s ease-out;
         }
-        .content {
-            margin-top: 2rem;
+
+        .work-focus {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(64, 224, 208, 0.2);
+            animation: slideInUp 1.4s ease-out;
         }
-        .content p {
+
+        .focus-2025 {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
             font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
+            margin: 2rem 0;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .vision-statement {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(64, 224, 208, 0.1), rgba(72, 202, 228, 0.1));
+            border-radius: 20px;
+            border-left: 4px solid #40e0d0;
+            position: relative;
+            animation: slideInUp 1.6s ease-out;
+        }
+
+        .vision-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: #40e0d0;
+            font-weight: 600;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .name-title {
+                font-size: 2.5rem;
+            }
+            
+            .initials {
+                font-size: 1.5rem;
+                display: block;
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+            
+            .quote {
+                font-size: 1.1rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(64, 224, 208, 0.5); }
+            to { text-shadow: 0 0 20px rgba(64, 224, 208, 0.8); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <div class="container">
-        <h1>Welcome to developer space of</h1>
-        <h1>Kavin Krishna Prasad | <span class="initials">KKP</span></h1>
-        <div class="ai-focus">🤖 Currently diving deep into AI Research & Core Machine Learning</div>
+        <div class="hero-section">
+            <h1 class="name-title">
+                Kavin Krishna Prasad
+                <span class="initials">| KKP</span>
+            </h1>
+            <p class="quote">It never gets easier, you just get better</p>
+        </div>
+
+        <div class="description">
+            <p>A software engineer who is really curious and passionate about building expertise in <span class="highlight">Mathematics</span>, <span class="highlight">Physics</span>, and <span class="highlight">Computation</span>.</p>
+        </div>
+
+        <div class="work-focus">
+            <p>My area of day-to-day work revolves around <strong>data governance and engineering</strong>. Helping businesses create order from chaos at <span class="highlight">Informatica</span>.</p>
+        </div>
+
+        <div class="focus-2025">
+            🎯 Focus on 2025!
+        </div>
+
+        <div class="vision-statement">
+            <p class="vision-text">
+                Connecting the dots between <span class="highlight">Math</span>, <span class="highlight">Physics</span>, and <span class="highlight">Computation</span> — ultimately unleashing the power where <strong>Human Intelligence meets Artificial Intelligence</strong>
+            </p>
+        </div>
     </div>
 </body>
 </html>
