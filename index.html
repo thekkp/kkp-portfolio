@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TheKKP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-section">
+        <div class="logo">
+          <span class="logo-letter">K</span>
+          <span class="logo-letter">K</span>
+          <span class="logo-letter">P</span>
+        </div>
+      </div>
+      <div class="header-text-section">
+        <p class="welcome-text">
+          Welcome to my world. I'm Kavin Krishna Prasad or TheKKP, and this site is a collection of my professional and personal pursuits.
+        </p>
+        <div class="philosophy">
+          <p class="philosophy-label">The philosophy that guides my journey, both personally and professionally:</p>
+          <blockquote class="philosophy-quote">
+            It never gets easier, you just get better.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="experience-section">
+    <div class="container">
+      <h2 class="section-title">TheKKP's Journey</h2>
+      <div class="section-grid">
+
+        <!-- Experience Card -->
+        <div class="card experience-card" id="experienceCard">
+          <div class="card-header">
+            <i class="fas fa-briefcase"></i>
+            <h3>Professional Experience</h3>
+          </div>
+          <div class="card-content">
+            <div class="experience-overview">
+              <div class="view-more">
+                <p>Click to explore my professional journey</p>
+                <span class="view-more-icon">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Timeline Modal -->
+        <div class="experience-modal" id="experienceModal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="modal-title">Professional Journey</h2>
+            
+            <div class="timeline">
+              <!-- 2025 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023-Present</div>
+                <div class="timeline-content">
+                  <h3>Software Engineer</h3>
+                  <h4>Informatica</h4>
+                  <p class="timeline-location">Location: Bengaluru, India</p>
+                  <ul class="timeline-achievements">
+                    <li>Collaborated with multiple business units to design and implement Data Governance solutions using CDGC.</li>
+                    <li>Developed automation scripts to streamline internal troubleshooting and deletion processes.</li>
+                    <li>Implemented a medallion architecture for the business, progressing from the raw data layer to DI and ultimately to the Governance solution.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>CDGC</span>
+                    <span>CDQ</span>
+                    <span>CDI</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2023 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021-2023</div>
+                <div class="timeline-content">
+                  <h3>Associate Software Engineer</h3>
+                  <h4>Informatica</h4>
+                  <p class="timeline-location">Location: Bengaluru, India</p>
+                  <ul class="timeline-achievements">
+                    <li>Assisted the business in deploying and maintaining the Data Governance solution on their on-premise cluster, ensuring seamless integration and optimal performance.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>Enterprise Data Catalog</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Skills Card -->
+        <div class="card skills-card" id="skillsCard">
+          <div class="card-header">
+            <i class="fas fa-code"></i>
+            <h3>Technical Skills</h3>
+          </div>
+          <div class="card-content">
+            <div class="skills-overview">
+              <p>Focused on mastering a diverse set of technologies to build robust, scalable, and efficient solutions.</p>
+              <div class="view-more">
+                <p>Click to explore detailed expertise in each domain</p>
+                <span class="view-more-icon">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Modal -->
+        <div class="skills-modal" id="skillsModal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="modal-title">Technical Expertise</h2>
+            <div class="skill-categories">
+
+              <!-- Full Stack Development -->
+              <div class="skill-category">
+                <h4>Full Stack Development</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <h5>Frontend</h5>
+                    <ul>
+                      <li>HTML5/CSS3</li>
+                      <li>JavaScript/TypeScript</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <h5>Backend</h5>
+                    <ul>
+                      <li>Python</li>
+                      <li>Django</li>
+                      <li>Java</li>
+                      <li>Spring Boot</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cloud -->
+              <div class="skill-category">
+                <h4>Cloud Technologies</h4>
+                <div class="skill-list">
+                  <ul>
+                    <li>AWS</li>
+                    <li>Azure</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- AI/ML -->
+              <div class="skill-category">
+                <h4>Artificial Intelligence</h4>
+                <div class="skill-list">
+                  <ul>
+                    <li>Neural Networks</li>
+                    <li>Large Language Models (LLMs)</li>
+                    <li>Retrieval-Augmented Generation (RAG)</li>
+                    <li>LLM Agents</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Data Engineering -->
+              <div class="skill-category">
+                <h4>Data Engineering</h4>
+                <div class="skill-list">
+                  <ul>
+                    <li>Databricks</li>
+                    <li>Data Integration</li>
+                    <li>Data Governance</li>
+                    <li>Various Database Technologies</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Passions Card -->
+        <a href="https://agentx.now/" target="_blank" rel="noopener noreferrer" class="card passion-card">
+          <div class="card-header">
+            <i class="fas fa-heart"></i>
+            <h3>Passion</h3>
+          </div>
+          <div class="card-content">
+            <div class="passion-item">
+              <h4>Artificial Intelligence</h4>
+              <p class="passion-description">
+                Working at my personal lab, AgentX, to automate complex problems by leveraging the power of LLM
+              </p>
+              <div class="agentx-link">
+                <span class="glow-text">Visit AgentX →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kavinkrishnaprasad" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        
+        <a href="https://www.instagram.com/kavinthekkp/" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        
+        <a href="https://x.com/kavinthekkp" target="_blank" rel="noopener noreferrer" class="social-link twitter" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24">
+            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="footer-text">
+        <p>&copy; 2025 TheKKP&trade;. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
