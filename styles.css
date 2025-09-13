@@ -413,12 +413,12 @@ body {
 }
 
 .timeline-item {
-  margin-bottom: 4rem; /* increased space */
-  min-height: auto; /* avoid fixed height */
+  margin-bottom: 4rem; 
+  min-height: auto; 
   position: relative;
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap; /* allow wrapping for smaller screens */
+  flex-wrap: wrap; 
 }
 
 .timeline-dot {
